@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "djs-fixed-progression",
 	"version": "${version}",
-	"name": "Example Mod",
+	"name": "DJs Fixed Progression",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,27 +12,27 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/djsfixedprogression/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"djabouty47.djsfixedprogression.DJsFixedProgression"
 		],
 		"client": [
-			"com.example.client.ExampleModClient"
+          "djabouty47.djsfixedprogression.client.DJsFixedProgressionClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"djs-fixed-progression.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "djs-fixed-progression.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.20.1",
-		"minecraft": "~26.3",
-		"java": ">=25",
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
 		"fabric-api": "*"
 	}
 }
